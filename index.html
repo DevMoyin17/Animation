@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        overflow-y: hidden;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .container1 {
+        position: relative;
+        background-image: url(skye.jpg);
+        width: 100%;
+        height: 300px;
+      }
+      .one {
+        background-color: white;
+        width: 100%;
+        height: 20px;
+        /* animation-name: one;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            position: absolute; */
+      }
+      .two {
+        background-color: #58f758;
+        width: 100%;
+        height: 20px;
+      }
+      .three {
+        background-image: url(road.jfif);
+        width: 100%;
+        height: 300px;
+      }
+      .img1 {
+        position: absolute;
+        left: 1100px;
+        height: 220px;
+      }
+      .img2 {
+        height: 180px;
+        position: absolute;
+        left: 900px;
+      }
+      .img3 {
+        height: 180px;
+        position: absolute;
+        left: 600px;
+      }
+      .img4 {
+        height: 180px;
+        position: absolute;
+        left: 300px;
+      }
+      .img5 {
+        height: 220px;
+        margin-left: 200px;
+      }
+      .img6 {
+        position: absolute;
+        top: 0px;
+        height: 270px;
+        animation-name: img6;
+        /* animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-direction: normal; */
+        animation: img6 9s linear infinite;
+      }
+      @keyframes img6 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 1200px;
+        }
+      }
+      .img7 {
+        height: 260px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        animation-name: img7;
+        animation-duration: 7s;
+        animation: img7 7s linear infinite;
+        /* animation-direction: normal;
+         animation-timing-function: ease;
+         animation-iteration-count: infinite; */
+      }
+      @keyframes img7 {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 1300px;
+        }
+      }
+      .img8 {
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        height: 200px;
+        animation-name: img8;
+        /* animation-duration: 3s; */
+        animation: img8 4s linear infinite;
+      }
+      @keyframes img8 {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 1300px;
+        }
+      }
+      .img9 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100px;
+        animation-name: img9;
+        /* animation-duration: 5s; */
+        animation: img9 2s linear infinite;
+      }
+      @keyframes img9 {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 1300px;
+        }
+      }
+      .img10 {
+        position: absolute;
+        left: 1200px;
+        top: 230px;
+        right: 0px;
+        /* height: 70px; */
+        animation-name: img10;
+        /* animation-duration: 7s; */
+        animation: img10 3s linear infinite;
+      }
+      @keyframes img10 {
+        from {
+          left: 1200px;
+        }
+        to {
+          left: 0px;
+        }
+      }
+      .img11 {
+        position: absolute;
+        left: 1200px;
+        top: 230px;
+        height: 200px;
+        animation-name: img11;
+        animation: img11 5s linear infinite;
+      }
+      @keyframes img11 {
+        from {
+          left: 1200px;
+        }
+        to {
+          left: 0px;
+        }
+      }
+      .img12 {
+        position: absolute;
+        left: 0px;
+        bottom: 30px;
+        width: 20%;
+        animation-name: img12;
+        animation: img12 2s linear infinite;
+      }
+      @keyframes img12 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 1200px;
+        }
+      }
+      .img13 {
+        position: absolute;
+        left: 0px;
+        bottom: 5px;
+        width: 7%;
+        animation-name: img13;
+        animation: img12 5s linear infinite;
+      }
+      @keyframes img13 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 1200px;
+        }
+      }
+      .img14 {
+        position: absolute;
+        right: 0px;
+        top: 330px;
+        height: 180px;
+        animation-name: img14;
+        animation: img14 2s linear infinite;
+      }
+      @keyframes img14 {
+        from {
+          left: 1200px;
+        }
+        to {
+          left: 0px;
+        }
+      }
+      .img15 {
+        position: absolute;
+        left: 0px;
+        bottom: 5px;
+        animation-name: img15;
+        animation: img15 4s linear infinite;
+      }
+      @keyframes img15 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 1200px;
+        }
+      }
+      .img16 {
+        position: absolute;
+        left: 0px;
+        bottom: 5px;
+        width: 7%;
+        animation-name: img16;
+        animation: img16 3s linear infinite;
+      }
+      @keyframes img16 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 1200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div style="overflow: hidden">
+        <img src="Images for assignment/ilustrasion-scene.png" alt="" />
+      </div>
+      <!-- <img class="7" src="Images for assignment/bird fly1.png" alt=""> -->
+      <img class="img9" src="Images for assignment/helicopter big.png" alt="" />
+      <img
+        class="img8"
+        src="Images for assignment/helicopter small.png"
+        alt=""
+      />
+      <input type="text" name="" id="" placeholder="email">
+
+      <img class="img6" src="Images for assignment/lady.png" alt="" />
+      <img class="img7" src="Images for assignment/man waving.png" alt="" />
+    </div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three">
+      <img class="img14" src="Images for assignment/Truck1.png" alt="" />
+      <img
+        class="img1"
+        src="Images for assignment/one_way-removebg-preview.png"
+        alt=""
+      />
+      <img class="img2" src="Images for assignment/street light.png" alt="" />
+      <img class="img3" src="Images for assignment/street light.png" alt="" />
+      <img class="img4" src="Images for assignment/street light.png" alt="" />
+      <img
+        class="img5"
+        src="Images for assignment/one_way-removebg-preview.png"
+        alt=""
+      />
+      <img class="img10" src="Images for assignment/small bike.png" alt="" />
+      <img class="img11" src="Images for assignment/yellow car.png" alt="" />
+      <img class="img12" src="Images for assignment/sport car (1).png" alt="" />
+      <img class="img13" src="Images for assignment/bicycle.png" alt="" />
+      <img class="img15" src="Images for assignment/taxi.png" alt="" />
+      <img class="img16" src="Images for assignment/truck2.png" alt="" />
+    </div>
+  </body>
+</html>
